@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		776B74822C109B4B0001948F /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B74812C109B4B0001948F /* Extension + UIColor.swift */; };
+		776B74842C109B5B0001948F /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B74832C109B5B0001948F /* Extension + UIFont.swift */; };
 		77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */; };
 		77C9D6392C1048A200F5CB81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6382C1048A200F5CB81 /* ContentView.swift */; };
 		77C9D63B2C1048A300F5CB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9D63A2C1048A300F5CB81 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		776B74812C109B4B0001948F /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
+		776B74832C109B5B0001948F /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
 		77C9D6332C1048A200F5CB81 /* WBSuiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBSuiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBSuiAppApp.swift; sourceTree = "<group>"; };
 		77C9D6382C1048A200F5CB81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +36,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		776B74802C109B210001948F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				776B74812C109B4B0001948F /* Extension + UIColor.swift */,
+				776B74832C109B5B0001948F /* Extension + UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		77C9D62A2C1048A200F5CB81 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +64,9 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
-				77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */,
-				77C9D6382C1048A200F5CB81 /* ContentView.swift */,
-				77C9D63A2C1048A300F5CB81 /* Assets.xcassets */,
-				77C9D63C2C1048A300F5CB81 /* Preview Content */,
+				776B74802C109B210001948F /* Extensions */,
+				77C9D6442C1048B000F5CB81 /* App */,
+				77C9D6452C1048BF00F5CB81 /* Resources */,
 			);
 			path = WBSuiApp;
 			sourceTree = "<group>";
@@ -65,6 +77,24 @@
 				77C9D63D2C1048A300F5CB81 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		77C9D6442C1048B000F5CB81 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */,
+				77C9D6382C1048A200F5CB81 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		77C9D6452C1048BF00F5CB81 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77C9D63A2C1048A300F5CB81 /* Assets.xcassets */,
+				77C9D63C2C1048A300F5CB81 /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776B74842C109B5B0001948F /* Extension + UIFont.swift in Sources */,
 				77C9D6392C1048A200F5CB81 /* ContentView.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
+				776B74822C109B4B0001948F /* Extension + UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WBSuiApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WBSuiApp/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 2A3746WANH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +332,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WBSuiApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WBSuiApp/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 2A3746WANH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
