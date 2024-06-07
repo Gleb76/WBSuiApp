@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		776B74822C109B4B0001948F /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B74812C109B4B0001948F /* Extension + UIColor.swift */; };
-		776B74842C109B5B0001948F /* Extension + UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776B74832C109B5B0001948F /* Extension + UIFont.swift */; };
+		77324E7F2C11A97100452467 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E7E2C11A97100452467 /* LogoView.swift */; };
+		77324E812C11A98100452467 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E802C11A98100452467 /* TitleView.swift */; };
+		77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E822C11A99200452467 /* TermsOfServiceView.swift */; };
+		77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E842C11A9A000452467 /* ActionButtonView.swift */; };
+		77324E892C11CCFC00452467 /* exampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E882C11CCFC00452467 /* exampleView.swift */; };
 		77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */; };
-		77C9D6392C1048A200F5CB81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6382C1048A200F5CB81 /* ContentView.swift */; };
+		77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6382C1048A200F5CB81 /* OnboardingView.swift */; };
 		77C9D63B2C1048A300F5CB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9D63A2C1048A300F5CB81 /* Assets.xcassets */; };
 		77C9D63E2C1048A300F5CB81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9D63D2C1048A300F5CB81 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		776B74812C109B4B0001948F /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
-		776B74832C109B5B0001948F /* Extension + UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIFont.swift"; sourceTree = "<group>"; };
+		77324E7E2C11A97100452467 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		77324E802C11A98100452467 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		77324E822C11A99200452467 /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
+		77324E842C11A9A000452467 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		77324E882C11CCFC00452467 /* exampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleView.swift; sourceTree = "<group>"; };
 		77C9D6332C1048A200F5CB81 /* WBSuiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBSuiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBSuiAppApp.swift; sourceTree = "<group>"; };
-		77C9D6382C1048A200F5CB81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		77C9D6382C1048A200F5CB81 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		77C9D63A2C1048A300F5CB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C9D63D2C1048A300F5CB81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -36,13 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		776B74802C109B210001948F /* Extensions */ = {
+		77324E862C11AA6300452467 /* OnBoardingScreen */ = {
 			isa = PBXGroup;
 			children = (
-				776B74812C109B4B0001948F /* Extension + UIColor.swift */,
-				776B74832C109B5B0001948F /* Extension + UIFont.swift */,
+				77C9D6382C1048A200F5CB81 /* OnboardingView.swift */,
+				77324E7E2C11A97100452467 /* LogoView.swift */,
+				77324E802C11A98100452467 /* TitleView.swift */,
+				77324E822C11A99200452467 /* TermsOfServiceView.swift */,
+				77324E842C11A9A000452467 /* ActionButtonView.swift */,
 			);
-			path = Extensions;
+			path = OnBoardingScreen;
 			sourceTree = "<group>";
 		};
 		77C9D62A2C1048A200F5CB81 = {
@@ -64,7 +73,6 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
-				776B74802C109B210001948F /* Extensions */,
 				77C9D6442C1048B000F5CB81 /* App */,
 				77C9D6452C1048BF00F5CB81 /* Resources */,
 			);
@@ -82,8 +90,9 @@
 		77C9D6442C1048B000F5CB81 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				77324E862C11AA6300452467 /* OnBoardingScreen */,
 				77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */,
-				77C9D6382C1048A200F5CB81 /* ContentView.swift */,
+				77324E882C11CCFC00452467 /* exampleView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -167,10 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				776B74842C109B5B0001948F /* Extension + UIFont.swift in Sources */,
-				77C9D6392C1048A200F5CB81 /* ContentView.swift in Sources */,
+				77324E7F2C11A97100452467 /* LogoView.swift in Sources */,
+				77324E812C11A98100452467 /* TitleView.swift in Sources */,
+				77324E892C11CCFC00452467 /* exampleView.swift in Sources */,
+				77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
-				776B74822C109B4B0001948F /* Extension + UIColor.swift in Sources */,
+				77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */,
+				77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
