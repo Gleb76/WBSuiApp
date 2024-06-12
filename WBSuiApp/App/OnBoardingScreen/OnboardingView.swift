@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
     @State private var showOnboarding = false
 
     var body: some View {
         VStack {
             LogoView()
-                .padding(.top, 45)
+                .padding(.top, 140)
             TitleView()
                 .padding(.top, 42)
             TermsOfServiceView()
-                .padding(.top, 158)
+                .padding(.top, 110)
             ActionButtonView(showOnboarding: $showOnboarding)
-                .padding(.top, 15)
+                .padding(.bottom, 30)
         }
         .padding()
         .sheet(isPresented: $showOnboarding) {
