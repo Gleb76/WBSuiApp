@@ -24,7 +24,6 @@ struct CustomTabBar: View {
                             Image(selectedIndex == index ? usingTabBarImages[index] : tabBarImages[index])
                                 .resizable()
                                 .frame(width: 58, height: 44)
-                                .foregroundColor(selectedIndex == index ? .wbDefaultPurple : .gray)
                         }
                     })
                     .frame(maxWidth: .infinity)
