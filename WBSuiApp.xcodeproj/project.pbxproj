@@ -76,6 +76,7 @@
 		77324E842C11A9A000452467 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		77324E882C11CCFC00452467 /* exampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleView.swift; sourceTree = "<group>"; };
 		777D9DA62C30226000996837 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		77905B8E2C32B6F600865D16 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77AEF7132C1C323900DE604E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewDetail.swift; sourceTree = "<group>"; };
 		77BBA2E32C2823BD00B57901 /* ContactsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContactsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +131,14 @@
 				77324E842C11A9A000452467 /* ActionButtonView.swift */,
 			);
 			path = OnBoardingScreen;
+			sourceTree = "<group>";
+		};
+		77905B8D2C32B6E400865D16 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				77905B8E2C32B6F600865D16 /* Factory.playground */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		77AEF7152C1C81CD00DE604E /* ContactsView */ = {
@@ -225,6 +234,7 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				77905B8D2C32B6E400865D16 /* Factory */,
 				77FD2AA82C2DFB550051360E /* Bank */,
 				77C9D6442C1048B000F5CB81 /* App */,
 				77C9D6452C1048BF00F5CB81 /* Resources */,
