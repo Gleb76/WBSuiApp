@@ -11,7 +11,8 @@ import SwiftUI
 struct WBSuiAppApp: App {
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+//            TabBarView()
+            InterpolationUIView()
         }
     }
 }
