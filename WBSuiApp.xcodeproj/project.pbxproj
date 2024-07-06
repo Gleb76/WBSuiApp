@@ -16,6 +16,11 @@
 		77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E822C11A99200452467 /* TermsOfServiceView.swift */; };
 		77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E842C11A9A000452467 /* ActionButtonView.swift */; };
 		77324E892C11CCFC00452467 /* exampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E882C11CCFC00452467 /* exampleView.swift */; };
+		775E5C722C39AA82004D1F8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C712C39AA82004D1F8E /* Constants.swift */; };
+		775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */; };
+		7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143C2C3736E10026D5CA /* InterpolationUIView.swift */; };
+		7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143E2C3737060026D5CA /* StringInterpolation.swift */; };
+		776114412C373A520026D5CA /* DataPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776114402C373A520026D5CA /* DataPickerViewModel.swift */; };
 		77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7132C1C323900DE604E /* CustomTabView.swift */; };
 		77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */; };
 		77BBA2E62C2823BD00B57901 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BBA2E52C2823BD00B57901 /* WidgetKit.framework */; };
@@ -75,6 +80,11 @@
 		77324E822C11A99200452467 /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
 		77324E842C11A9A000452467 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		77324E882C11CCFC00452467 /* exampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleView.swift; sourceTree = "<group>"; };
+		775E5C712C39AA82004D1F8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtils.swift; sourceTree = "<group>"; };
+		7761143C2C3736E10026D5CA /* InterpolationUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolationUIView.swift; sourceTree = "<group>"; };
+		7761143E2C3737060026D5CA /* StringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterpolation.swift; sourceTree = "<group>"; };
+		776114402C373A520026D5CA /* DataPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewModel.swift; sourceTree = "<group>"; };
 		777D9DA62C30226000996837 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77905B8E2C32B6F600865D16 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77AEF7132C1C323900DE604E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -131,6 +141,18 @@
 				77324E842C11A9A000452467 /* ActionButtonView.swift */,
 			);
 			path = OnBoardingScreen;
+			sourceTree = "<group>";
+		};
+		7761143B2C3736BB0026D5CA /* Interpolation */ = {
+			isa = PBXGroup;
+			children = (
+				7761143C2C3736E10026D5CA /* InterpolationUIView.swift */,
+				7761143E2C3737060026D5CA /* StringInterpolation.swift */,
+				776114402C373A520026D5CA /* DataPickerViewModel.swift */,
+				775E5C712C39AA82004D1F8E /* Constants.swift */,
+				775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */,
+			);
+			path = Interpolation;
 			sourceTree = "<group>";
 		};
 		77905B8D2C32B6E400865D16 /* Factory */ = {
@@ -234,6 +256,7 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				7761143B2C3736BB0026D5CA /* Interpolation */,
 				77905B8D2C32B6E400865D16 /* Factory */,
 				77FD2AA82C2DFB550051360E /* Bank */,
 				77C9D6442C1048B000F5CB81 /* App */,
@@ -343,6 +366,10 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				"zh-HK",
+				it,
+				de,
 			);
 			mainGroup = 77C9D62A2C1048A200F5CB81;
 			productRefGroup = 77C9D6342C1048A200F5CB81 /* Products */;
@@ -397,23 +424,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				77324E7F2C11A97100452467 /* LogoView.swift in Sources */,
+				775E5C722C39AA82004D1F8E /* Constants.swift in Sources */,
 				77C707322C1A36BE000E4C56 /* TabBarView.swift in Sources */,
 				77C707362C1A3854000E4C56 /* ChatsView.swift in Sources */,
 				77324E812C11A98100452467 /* TitleView.swift in Sources */,
 				77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */,
+				776114412C373A520026D5CA /* DataPickerViewModel.swift in Sources */,
 				77324E892C11CCFC00452467 /* exampleView.swift in Sources */,
 				77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */,
 				77C7073E2C1A3B50000E4C56 /* ContactsData.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
 				77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */,
 				77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */,
+				7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */,
 				77C707302C1A36B0000E4C56 /* ContactsView.swift in Sources */,
 				77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */,
 				772AAE7A2C24597100B9943D /* ContactsScreenView.swift in Sources */,
 				77C707382C1A385E000E4C56 /* SettingsView.swift in Sources */,
 				77050C762C284FAE00FAA9A2 /* CustomWidghetContactsUIView.swift in Sources */,
+				7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */,
 				772AAE7C2C24875D00B9943D /* SearchBar.swift in Sources */,
 				77C7073B2C1A3AC0000E4C56 /* ContactsModel.swift in Sources */,
+				775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

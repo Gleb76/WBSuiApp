@@ -23,12 +23,12 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<key>ContactsWidgetExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Factory (Playground) 1.xcscheme</key>
 		<dict>
@@ -54,7 +54,20 @@
 		<key>WBSuiApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>77BBA2E22C2823BD00B57901</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77C9D6322C1048A200F5CB81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
