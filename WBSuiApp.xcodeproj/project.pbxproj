@@ -21,6 +21,7 @@
 		7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143C2C3736E10026D5CA /* InterpolationUIView.swift */; };
 		7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143E2C3737060026D5CA /* StringInterpolation.swift */; };
 		776114412C373A520026D5CA /* DataPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776114402C373A520026D5CA /* DataPickerViewModel.swift */; };
+		778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F359F2C3F21A60050367D /* ScrollUIView.swift */; };
 		77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7132C1C323900DE604E /* CustomTabView.swift */; };
 		77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */; };
 		77BBA2E62C2823BD00B57901 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BBA2E52C2823BD00B57901 /* WidgetKit.framework */; };
@@ -86,6 +87,7 @@
 		7761143E2C3737060026D5CA /* StringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterpolation.swift; sourceTree = "<group>"; };
 		776114402C373A520026D5CA /* DataPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewModel.swift; sourceTree = "<group>"; };
 		777D9DA62C30226000996837 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		778F359F2C3F21A60050367D /* ScrollUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollUIView.swift; sourceTree = "<group>"; };
 		77905B8E2C32B6F600865D16 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77AEF7132C1C323900DE604E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewDetail.swift; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 				775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */,
 			);
 			path = Interpolation;
+			sourceTree = "<group>";
+		};
+		778F359E2C3F21920050367D /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				778F359F2C3F21A60050367D /* ScrollUIView.swift */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 		77905B8D2C32B6E400865D16 /* Factory */ = {
@@ -256,6 +266,7 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				778F359E2C3F21920050367D /* ScrollView */,
 				7761143B2C3736BB0026D5CA /* Interpolation */,
 				77905B8D2C32B6E400865D16 /* Factory */,
 				77FD2AA82C2DFB550051360E /* Bank */,
@@ -436,6 +447,7 @@
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
 				77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */,
 				77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */,
+				778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */,
 				7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */,
 				77C707302C1A36B0000E4C56 /* ContactsView.swift in Sources */,
 				77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */,
