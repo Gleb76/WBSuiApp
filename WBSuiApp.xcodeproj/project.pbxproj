@@ -15,12 +15,13 @@
 		77324E812C11A98100452467 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E802C11A98100452467 /* TitleView.swift */; };
 		77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E822C11A99200452467 /* TermsOfServiceView.swift */; };
 		77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E842C11A9A000452467 /* ActionButtonView.swift */; };
-		77324E892C11CCFC00452467 /* exampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E882C11CCFC00452467 /* exampleView.swift */; };
+		77324E892C11CCFC00452467 /* TelephoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E882C11CCFC00452467 /* TelephoneView.swift */; };
 		775E5C722C39AA82004D1F8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C712C39AA82004D1F8E /* Constants.swift */; };
 		775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */; };
 		7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143C2C3736E10026D5CA /* InterpolationUIView.swift */; };
 		7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143E2C3737060026D5CA /* StringInterpolation.swift */; };
 		776114412C373A520026D5CA /* DataPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776114402C373A520026D5CA /* DataPickerViewModel.swift */; };
+		777E14292C4A6E9A005989CD /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E14282C4A6E9A005989CD /* CountryPicker.swift */; };
 		778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F359F2C3F21A60050367D /* ScrollUIView.swift */; };
 		77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7132C1C323900DE604E /* CustomTabView.swift */; };
 		77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */; };
@@ -46,6 +47,7 @@
 		77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6382C1048A200F5CB81 /* OnboardingView.swift */; };
 		77C9D63B2C1048A300F5CB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9D63A2C1048A300F5CB81 /* Assets.xcassets */; };
 		77C9D63E2C1048A300F5CB81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9D63D2C1048A300F5CB81 /* Preview Assets.xcassets */; };
+		77F96BAD2C4658BA0044B255 /* TelephoneTestingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F96BAC2C4658BA0044B255 /* TelephoneTestingData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,13 +82,14 @@
 		77324E802C11A98100452467 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		77324E822C11A99200452467 /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
 		77324E842C11A9A000452467 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
-		77324E882C11CCFC00452467 /* exampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exampleView.swift; sourceTree = "<group>"; };
+		77324E882C11CCFC00452467 /* TelephoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneView.swift; sourceTree = "<group>"; };
 		775E5C712C39AA82004D1F8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtils.swift; sourceTree = "<group>"; };
 		7761143C2C3736E10026D5CA /* InterpolationUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolationUIView.swift; sourceTree = "<group>"; };
 		7761143E2C3737060026D5CA /* StringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterpolation.swift; sourceTree = "<group>"; };
 		776114402C373A520026D5CA /* DataPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewModel.swift; sourceTree = "<group>"; };
 		777D9DA62C30226000996837 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		777E14282C4A6E9A005989CD /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		778F359F2C3F21A60050367D /* ScrollUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollUIView.swift; sourceTree = "<group>"; };
 		77905B8E2C32B6F600865D16 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77AEF7132C1C323900DE604E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		77C9D6382C1048A200F5CB81 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		77C9D63A2C1048A300F5CB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77C9D63D2C1048A300F5CB81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		77F96BAC2C4658BA0044B255 /* TelephoneTestingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneTestingData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,10 +291,10 @@
 		77C9D6442C1048B000F5CB81 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				77F96BAB2C4658890044B255 /* Telephone */,
 				77C707332C1A36C3000E4C56 /* TabBar */,
 				77324E862C11AA6300452467 /* OnBoardingScreen */,
 				77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */,
-				77324E882C11CCFC00452467 /* exampleView.swift */,
 				772AAE7B2C24875D00B9943D /* SearchBar.swift */,
 			);
 			path = App;
@@ -303,6 +307,16 @@
 				77C9D63C2C1048A300F5CB81 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		77F96BAB2C4658890044B255 /* Telephone */ = {
+			isa = PBXGroup;
+			children = (
+				77324E882C11CCFC00452467 /* TelephoneView.swift */,
+				77F96BAC2C4658BA0044B255 /* TelephoneTestingData.swift */,
+				777E14282C4A6E9A005989CD /* CountryPicker.swift */,
+			);
+			path = Telephone;
 			sourceTree = "<group>";
 		};
 		77FD2AA82C2DFB550051360E /* Bank */ = {
@@ -441,7 +455,8 @@
 				77324E812C11A98100452467 /* TitleView.swift in Sources */,
 				77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */,
 				776114412C373A520026D5CA /* DataPickerViewModel.swift in Sources */,
-				77324E892C11CCFC00452467 /* exampleView.swift in Sources */,
+				777E14292C4A6E9A005989CD /* CountryPicker.swift in Sources */,
+				77324E892C11CCFC00452467 /* TelephoneView.swift in Sources */,
 				77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */,
 				77C7073E2C1A3B50000E4C56 /* ContactsData.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
@@ -457,6 +472,7 @@
 				7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */,
 				772AAE7C2C24875D00B9943D /* SearchBar.swift in Sources */,
 				77C7073B2C1A3AC0000E4C56 /* ContactsModel.swift in Sources */,
+				77F96BAD2C4658BA0044B255 /* TelephoneTestingData.swift in Sources */,
 				775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
