@@ -22,9 +22,9 @@ struct OnboardingView: View {
                 .padding(.top, 15)
         }
         .padding()
-        .sheet(isPresented: $showOnboarding) {
-            ExampleView(showOnboarding: $showOnboarding)
-        }
+//        .sheet(isPresented: $showOnboarding) {
+//            TelephoneView(showOnboarding: $showOnboarding)
+//        }
     }
 }
 
