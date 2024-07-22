@@ -12,8 +12,9 @@ struct WBSuiAppApp: App {
     var body: some Scene {
         WindowGroup {
 //            OnboardingView()
-            TelephoneView()
+//            TelephoneView()
 //            InterpolationUIView()
+            AuthorizationView()
         }
     }
 }
