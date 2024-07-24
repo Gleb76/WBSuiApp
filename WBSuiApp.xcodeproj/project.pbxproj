@@ -10,13 +10,8 @@
 		77050C752C284ED300FAA9A2 /* CustomWidghetContactsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77050C742C284ED300FAA9A2 /* CustomWidghetContactsUIView.swift */; };
 		77050C762C284FAE00FAA9A2 /* CustomWidghetContactsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77050C742C284ED300FAA9A2 /* CustomWidghetContactsUIView.swift */; };
 		772AAE7A2C24597100B9943D /* ContactsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772AAE792C24597100B9943D /* ContactsScreenView.swift */; };
-		772AAE7C2C24875D00B9943D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772AAE7B2C24875D00B9943D /* SearchBar.swift */; };
-		77324E7F2C11A97100452467 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E7E2C11A97100452467 /* LogoView.swift */; };
-		77324E812C11A98100452467 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E802C11A98100452467 /* TitleView.swift */; };
-		77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E822C11A99200452467 /* TermsOfServiceView.swift */; };
-		77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E842C11A9A000452467 /* ActionButtonView.swift */; };
+		772EAFD82C514ABA00095B1C /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 772EAFD72C514ABA00095B1C /* UISystem */; };
 		77324E892C11CCFC00452467 /* TelephoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E882C11CCFC00452467 /* TelephoneView.swift */; };
-		775059A12C4E57B10078424D /* OneTimeCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775059A02C4E57B10078424D /* OneTimeCodeTextField.swift */; };
 		775059A32C4ECB850078424D /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775059A22C4ECB850078424D /* AuthorizationViewModel.swift */; };
 		775E5C722C39AA82004D1F8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C712C39AA82004D1F8E /* Constants.swift */; };
 		775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */; };
@@ -27,6 +22,7 @@
 		777E142B2C4C214D005989CD /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E142A2C4C214D005989CD /* AuthorizationView.swift */; };
 		777E14302C4C2421005989CD /* NotificationsCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E142F2C4C2421005989CD /* NotificationsCenter.swift */; };
 		778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F359F2C3F21A60050367D /* ScrollUIView.swift */; };
+		77A928592C517B080093A4C4 /* OneTimeCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A928582C517B080093A4C4 /* OneTimeCodeTextField.swift */; };
 		77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7132C1C323900DE604E /* CustomTabView.swift */; };
 		77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */; };
 		77BBA2E62C2823BD00B57901 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BBA2E52C2823BD00B57901 /* WidgetKit.framework */; };
@@ -81,13 +77,7 @@
 /* Begin PBXFileReference section */
 		77050C742C284ED300FAA9A2 /* CustomWidghetContactsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWidghetContactsUIView.swift; sourceTree = "<group>"; };
 		772AAE792C24597100B9943D /* ContactsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreenView.swift; sourceTree = "<group>"; };
-		772AAE7B2C24875D00B9943D /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		77324E7E2C11A97100452467 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
-		77324E802C11A98100452467 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
-		77324E822C11A99200452467 /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
-		77324E842C11A9A000452467 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		77324E882C11CCFC00452467 /* TelephoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneView.swift; sourceTree = "<group>"; };
-		775059A02C4E57B10078424D /* OneTimeCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeTextField.swift; sourceTree = "<group>"; };
 		775059A22C4ECB850078424D /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		775E5C712C39AA82004D1F8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtils.swift; sourceTree = "<group>"; };
@@ -103,6 +93,8 @@
 		777E142F2C4C2421005989CD /* NotificationsCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCenter.swift; sourceTree = "<group>"; };
 		778F359F2C3F21A60050367D /* ScrollUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollUIView.swift; sourceTree = "<group>"; };
 		77905B8E2C32B6F600865D16 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		779944972C5123A800567A63 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = text; name = UISystem; path = Modules/UISystem; sourceTree = SOURCE_ROOT; };
+		77A928582C517B080093A4C4 /* OneTimeCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeTextField.swift; sourceTree = "<group>"; };
 		77AEF7132C1C323900DE604E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewDetail.swift; sourceTree = "<group>"; };
 		77BBA2E32C2823BD00B57901 /* ContactsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContactsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772EAFD82C514ABA00095B1C /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,10 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				77C9D6382C1048A200F5CB81 /* OnboardingView.swift */,
-				77324E7E2C11A97100452467 /* LogoView.swift */,
-				77324E802C11A98100452467 /* TitleView.swift */,
-				77324E822C11A99200452467 /* TermsOfServiceView.swift */,
-				77324E842C11A9A000452467 /* ActionButtonView.swift */,
 			);
 			path = OnBoardingScreen;
 			sourceTree = "<group>";
@@ -187,7 +176,7 @@
 			children = (
 				777E142A2C4C214D005989CD /* AuthorizationView.swift */,
 				777E142F2C4C2421005989CD /* NotificationsCenter.swift */,
-				775059A02C4E57B10078424D /* OneTimeCodeTextField.swift */,
+				77A928582C517B080093A4C4 /* OneTimeCodeTextField.swift */,
 				775059A22C4ECB850078424D /* AuthorizationViewModel.swift */,
 			);
 			path = Authorization;
@@ -302,6 +291,7 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				779944972C5123A800567A63 /* UISystem */,
 				777B33DA2C50EA54005E52D9 /* HashTable */,
 				77C9D6452C1048BF00F5CB81 /* Resources */,
 				778F359E2C3F21920050367D /* ScrollView */,
@@ -329,7 +319,6 @@
 				77F96BAB2C4658890044B255 /* Telephone */,
 				777E142C2C4C2151005989CD /* Authorization */,
 				77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */,
-				772AAE7B2C24875D00B9943D /* SearchBar.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -377,6 +366,8 @@
 			dependencies = (
 			);
 			name = ContactsWidgetExtension;
+			packageProductDependencies = (
+			);
 			productName = ContactsWidgetExtension;
 			productReference = 77BBA2E32C2823BD00B57901 /* ContactsWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -396,6 +387,9 @@
 				77BBA2F22C2823BF00B57901 /* PBXTargetDependency */,
 			);
 			name = WBSuiApp;
+			packageProductDependencies = (
+				772EAFD72C514ABA00095B1C /* UISystem */,
+			);
 			productName = WBSuiApp;
 			productReference = 77C9D6332C1048A200F5CB81 /* WBSuiApp.app */;
 			productType = "com.apple.product-type.application";
@@ -482,11 +476,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77324E7F2C11A97100452467 /* LogoView.swift in Sources */,
 				775E5C722C39AA82004D1F8E /* Constants.swift in Sources */,
 				77C707322C1A36BE000E4C56 /* TabBarView.swift in Sources */,
 				77C707362C1A3854000E4C56 /* ChatsView.swift in Sources */,
-				77324E812C11A98100452467 /* TitleView.swift in Sources */,
 				77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */,
 				776114412C373A520026D5CA /* DataPickerViewModel.swift in Sources */,
 				777E14302C4C2421005989CD /* NotificationsCenter.swift in Sources */,
@@ -496,8 +488,6 @@
 				77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */,
 				77C7073E2C1A3B50000E4C56 /* ContactsData.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
-				77324E852C11A9A000452467 /* ActionButtonView.swift in Sources */,
-				77324E832C11A99200452467 /* TermsOfServiceView.swift in Sources */,
 				778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */,
 				7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */,
 				77C707302C1A36B0000E4C56 /* ContactsView.swift in Sources */,
@@ -507,10 +497,9 @@
 				77050C762C284FAE00FAA9A2 /* CustomWidghetContactsUIView.swift in Sources */,
 				7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */,
 				775059A32C4ECB850078424D /* AuthorizationViewModel.swift in Sources */,
-				772AAE7C2C24875D00B9943D /* SearchBar.swift in Sources */,
 				77C7073B2C1A3AC0000E4C56 /* ContactsModel.swift in Sources */,
 				77F96BAD2C4658BA0044B255 /* TelephoneTestingData.swift in Sources */,
-				775059A12C4E57B10078424D /* OneTimeCodeTextField.swift in Sources */,
+				77A928592C517B080093A4C4 /* OneTimeCodeTextField.swift in Sources */,
 				775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,6 +779,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		772EAFD72C514ABA00095B1C /* UISystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UISystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 77C9D62B2C1048A200F5CB81 /* Project object */;
 }

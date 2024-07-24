@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct LogoView: View {
-    var body: some View {
+public struct LogoView: View {
+    
+    public init() {}
+    
+    public var body: some View {
         Image("Illustration")
             .resizable()
             .aspectRatio(contentMode: .fit)

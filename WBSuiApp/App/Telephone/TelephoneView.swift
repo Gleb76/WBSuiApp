@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UISystem
 
 struct TelephoneView: View {
     @State private var tfText: String = ""
@@ -78,26 +79,22 @@ struct TelephoneView: View {
                     ProgressView()
                         .scaleEffect(1.5, anchor: .center)
                 } else {
-                    Button(action: {
-                        if tfText.count == 10 {
-                            withAnimation {
-                                showText = false
-                                showProgress = true
+                    CustomButton(
+                        title: "Продолжить",
+                        backgroundColor: tfText.count == 10 ? .purple : .gray,
+                        textColor: .white,
+                        action: {
+                            if tfText.count == 10 {
+                                withAnimation {
+                                    showText = false
+                                    showProgress = true
+                                }
+                                addPhone()
+                            } else {
+                                errorMessage = true
                             }
-                            addPhone()
-                        } else {
-                            errorMessage = true
                         }
-                    }) {
-                        Text("Продолжить")
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(tfText.count == 10 ? Color.purple : Color.gray)
-                            .foregroundColor(.white)
-                            .font(.headline)
-                            .cornerRadius(30)
-                            .padding(.horizontal)
-                    }
+                    )
                     .padding(.bottom, 32)
                 }
             }

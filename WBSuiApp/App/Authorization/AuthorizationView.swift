@@ -4,8 +4,11 @@
 // Created by Глеб Клыга on 20.07.24.
 //
 
+// AuthorizationView.swift
+
 import SwiftUI
 import UserNotifications
+import UISystem
 
 struct AuthorizationView: View {
     @StateObject private var viewModel = AuthorizationViewModel()
@@ -41,16 +44,12 @@ struct AuthorizationView: View {
             }
             .padding(.bottom, 32)
             
-            Button(action: viewModel.submitCode) {
-                Text("Продолжить")
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(viewModel.isCodeComplete ? Color.purple : Color.gray)
-                    .foregroundColor(.white)
-                    .font(.headline)
-                    .cornerRadius(30)
-                    .padding(.horizontal)
-            }
+            CustomButton(
+                title: "Продолжить",
+                backgroundColor: viewModel.isCodeComplete ? .purple : .gray,
+                textColor: .white,
+                action: viewModel.submitCode
+            )
             .padding(.bottom, 32)
             .alert(isPresented: $viewModel.showAlert) {
                 Alert(title: Text(viewModel.alertMessage))
@@ -58,11 +57,12 @@ struct AuthorizationView: View {
             
             Spacer()
             
-            Button(action: viewModel.requestNewCode) {
-                Text("Запросить код повторно")
-                    .foregroundColor(.purple)
-                    .font(.system(size: 16))
-            }
+            CustomButton(
+                title: "Запросить код повторно",
+                backgroundColor: .clear,
+                textColor: .purple,
+                action: viewModel.requestNewCode
+            )
         }
         .padding(.horizontal)
         .onAppear {
