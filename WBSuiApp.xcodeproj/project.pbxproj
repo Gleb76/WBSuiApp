@@ -94,6 +94,9 @@
 		7761143C2C3736E10026D5CA /* InterpolationUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolationUIView.swift; sourceTree = "<group>"; };
 		7761143E2C3737060026D5CA /* StringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInterpolation.swift; sourceTree = "<group>"; };
 		776114402C373A520026D5CA /* DataPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPickerViewModel.swift; sourceTree = "<group>"; };
+		777B33E12C50EC3A005E52D9 /* Hash.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Hash.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		777B33E22C50EC5B005E52D9 /* Set.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Set.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		777B33E32C50EC74005E52D9 /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		777D9DA62C30226000996837 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		777E14282C4A6E9A005989CD /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		777E142A2C4C214D005989CD /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
@@ -167,6 +170,16 @@
 				775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */,
 			);
 			path = Interpolation;
+			sourceTree = "<group>";
+		};
+		777B33DA2C50EA54005E52D9 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				777B33E12C50EC3A005E52D9 /* Hash.playground */,
+				777B33E22C50EC5B005E52D9 /* Set.playground */,
+				777B33E32C50EC74005E52D9 /* Dictionary.playground */,
+			);
+			path = HashTable;
 			sourceTree = "<group>";
 		};
 		777E142C2C4C2151005989CD /* Authorization */ = {
@@ -289,6 +302,7 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				777B33DA2C50EA54005E52D9 /* HashTable */,
 				77C9D6452C1048BF00F5CB81 /* Resources */,
 				778F359E2C3F21920050367D /* ScrollView */,
 				7761143B2C3736BB0026D5CA /* Interpolation */,
