@@ -7,8 +7,11 @@
 
 import SwiftUI
 
-struct TitleView: View {
-    var body: some View {
+public struct TitleView: View {
+    
+    public init() {}
+    
+    public var body: some View {
         Text("Общайтесь с друзьями\nи близкими легко")
             .font(.system(size: 24, weight: .bold))
             .frame(width: 280, height: 58)
