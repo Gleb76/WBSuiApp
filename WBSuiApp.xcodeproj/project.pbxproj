@@ -18,6 +18,11 @@
 		7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143C2C3736E10026D5CA /* InterpolationUIView.swift */; };
 		7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143E2C3737060026D5CA /* StringInterpolation.swift */; };
 		776114412C373A520026D5CA /* DataPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776114402C373A520026D5CA /* DataPickerViewModel.swift */; };
+		777C51422C57AD65005666F8 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C51412C57AD65005666F8 /* ListView.swift */; };
+		777C514B2C57CA71005666F8 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C514A2C57CA71005666F8 /* ItemModel.swift */; };
+		777C514E2C57CB6F005666F8 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C514D2C57CB6F005666F8 /* ListViewModel.swift */; };
+		777C51502C57CD79005666F8 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C514F2C57CD79005666F8 /* AddView.swift */; };
+		777C51532C5BC870005666F8 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777C51522C5BC870005666F8 /* Dynamic.swift */; };
 		777E14292C4A6E9A005989CD /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E14282C4A6E9A005989CD /* CountryPicker.swift */; };
 		777E142B2C4C214D005989CD /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E142A2C4C214D005989CD /* AuthorizationView.swift */; };
 		777E14302C4C2421005989CD /* NotificationsCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E142F2C4C2421005989CD /* NotificationsCenter.swift */; };
@@ -87,6 +92,11 @@
 		777B33E12C50EC3A005E52D9 /* Hash.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Hash.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		777B33E22C50EC5B005E52D9 /* Set.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Set.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		777B33E32C50EC74005E52D9 /* Dictionary.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionary.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		777C51412C57AD65005666F8 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		777C514A2C57CA71005666F8 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		777C514D2C57CB6F005666F8 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		777C514F2C57CD79005666F8 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		777C51522C5BC870005666F8 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		777D9DA62C30226000996837 /* Bank.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Bank.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		777E14282C4A6E9A005989CD /* CountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
 		777E142A2C4C214D005989CD /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
@@ -169,6 +179,50 @@
 				777B33E32C50EC74005E52D9 /* Dictionary.playground */,
 			);
 			path = HashTable;
+			sourceTree = "<group>";
+		};
+		777C51402C57AD53005666F8 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				777C51542C5C15F4005666F8 /* Screens */,
+				777C51512C5BC863005666F8 /* Bindings */,
+				777C514C2C57CA7A005666F8 /* Models */,
+				777C51492C57CA61005666F8 /* ViewModels */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		777C51492C57CA61005666F8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				777C514D2C57CB6F005666F8 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		777C514C2C57CA7A005666F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				777C514A2C57CA71005666F8 /* ItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777C51512C5BC863005666F8 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				777C51522C5BC870005666F8 /* Dynamic.swift */,
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		777C51542C5C15F4005666F8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				777C51412C57AD65005666F8 /* ListView.swift */,
+				777C514F2C57CD79005666F8 /* AddView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		777E142C2C4C2151005989CD /* Authorization */ = {
@@ -291,6 +345,7 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				777C51402C57AD53005666F8 /* ToDoList */,
 				779944972C5123A800567A63 /* UISystem */,
 				777B33DA2C50EA54005E52D9 /* HashTable */,
 				77C9D6452C1048BF00F5CB81 /* Resources */,
@@ -484,12 +539,16 @@
 				777E14302C4C2421005989CD /* NotificationsCenter.swift in Sources */,
 				777E14292C4A6E9A005989CD /* CountryPicker.swift in Sources */,
 				777E142B2C4C214D005989CD /* AuthorizationView.swift in Sources */,
+				777C51502C57CD79005666F8 /* AddView.swift in Sources */,
+				777C514B2C57CA71005666F8 /* ItemModel.swift in Sources */,
 				77324E892C11CCFC00452467 /* TelephoneView.swift in Sources */,
 				77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */,
+				777C51532C5BC870005666F8 /* Dynamic.swift in Sources */,
 				77C7073E2C1A3B50000E4C56 /* ContactsData.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
 				778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */,
 				7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */,
+				777C51422C57AD65005666F8 /* ListView.swift in Sources */,
 				77C707302C1A36B0000E4C56 /* ContactsView.swift in Sources */,
 				77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */,
 				772AAE7A2C24597100B9943D /* ContactsScreenView.swift in Sources */,
@@ -500,6 +559,7 @@
 				77C7073B2C1A3AC0000E4C56 /* ContactsModel.swift in Sources */,
 				77F96BAD2C4658BA0044B255 /* TelephoneTestingData.swift in Sources */,
 				77A928592C517B080093A4C4 /* OneTimeCodeTextField.swift in Sources */,
+				777C514E2C57CB6F005666F8 /* ListViewModel.swift in Sources */,
 				775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
