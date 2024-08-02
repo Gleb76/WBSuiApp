@@ -62,3 +62,7 @@ struct ContactsView: View {
         }
     }
 }
+
+#Preview {
+    ContactsView(contacts: contacts)
+}
