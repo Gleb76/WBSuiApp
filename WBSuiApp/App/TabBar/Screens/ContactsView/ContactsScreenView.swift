@@ -1,4 +1,3 @@
-//
 //  ContactsScreenView.swift
 //  WBSuiApp
 //
@@ -9,14 +8,26 @@ import SwiftUI
 
 struct ContactsScreenView: View {
     let contact: Contact
+    @StateObject private var imageLoader = AsyncImageLoader()
+    
     var body: some View {
         HStack {
             if let profileImage = contact.profileImage {
                 ZStack {
-                    Image(profileImage)
-                        .resizable()
-                        .frame(width: 48, height: 48)
-                        .padding(.trailing, 10)
+                    if let image = imageLoader.image {
+                        image
+                            .resizable()
+                            .frame(width: 48, height: 48)
+                            .padding(.trailing, 10)
+                    } else {
+                        Rectangle()
+                            .foregroundColor(Color.gray)
+                            .frame(width: 48, height: 48)
+                            .padding(.trailing, 10)
+                            .onAppear {
+                                imageLoader.loadImage(from: profileImage)
+                            }
+                    }
                     
                     if contact.stories {
                         Image("Story")
@@ -51,3 +62,4 @@ struct ContactsScreenView: View {
 #Preview {
     ContactsScreenView(contact: Contact(name: "Анастасия Иванова", lastSeen: "Last seen yesterday", profileImage: "anastasia", stories: true, isOnline: true))
 }
+

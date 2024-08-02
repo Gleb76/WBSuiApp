@@ -38,7 +38,6 @@
 		77BBA2F32C2823BF00B57901 /* ContactsWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 77BBA2E32C2823BD00B57901 /* ContactsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		77BBA2FB2C28253B00B57901 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA2FA2C28253B00B57901 /* Provider.swift */; };
 		77BBA2FD2C28268B00B57901 /* ContactsWidgetUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BBA2FC2C28268B00B57901 /* ContactsWidgetUIView.swift */; };
-		77BBA2FE2C282C2E00B57901 /* ContactsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772AAE792C24597100B9943D /* ContactsScreenView.swift */; };
 		77BBA2FF2C282C3200B57901 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C7073A2C1A3AC0000E4C56 /* ContactsModel.swift */; };
 		77BBA3002C282C3700B57901 /* ContactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C7073D2C1A3B50000E4C56 /* ContactsData.swift */; };
 		77BBA3012C28337C00B57901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9D63A2C1048A300F5CB81 /* Assets.xcassets */; };
@@ -48,6 +47,7 @@
 		77C707382C1A385E000E4C56 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C707372C1A385E000E4C56 /* SettingsView.swift */; };
 		77C7073B2C1A3AC0000E4C56 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C7073A2C1A3AC0000E4C56 /* ContactsModel.swift */; };
 		77C7073E2C1A3B50000E4C56 /* ContactsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C7073D2C1A3B50000E4C56 /* ContactsData.swift */; };
+		77C9395F2C5D2E7600507398 /* AsyncImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9395E2C5D2E7600507398 /* AsyncImageLoader.swift */; };
 		77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */; };
 		77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C9D6382C1048A200F5CB81 /* OnboardingView.swift */; };
 		77C9D63B2C1048A300F5CB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C9D63A2C1048A300F5CB81 /* Assets.xcassets */; };
@@ -122,6 +122,7 @@
 		77C707372C1A385E000E4C56 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		77C7073A2C1A3AC0000E4C56 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		77C7073D2C1A3B50000E4C56 /* ContactsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsData.swift; sourceTree = "<group>"; };
+		77C9395E2C5D2E7600507398 /* AsyncImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageLoader.swift; sourceTree = "<group>"; };
 		77C9D6332C1048A200F5CB81 /* WBSuiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBSuiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C9D6362C1048A200F5CB81 /* WBSuiAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBSuiAppApp.swift; sourceTree = "<group>"; };
 		77C9D6382C1048A200F5CB81 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -288,6 +289,7 @@
 		77C707332C1A36C3000E4C56 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				77C9395D2C5D2E6000507398 /* GCD */,
 				77C7073C2C1A3B32000E4C56 /* TestsData */,
 				77C707392C1A3AB0000E4C56 /* Model */,
 				77C707342C1A36D6000E4C56 /* Screens */,
@@ -321,6 +323,14 @@
 				77C7073D2C1A3B50000E4C56 /* ContactsData.swift */,
 			);
 			path = TestsData;
+			sourceTree = "<group>";
+		};
+		77C9395D2C5D2E6000507398 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				77C9395E2C5D2E7600507398 /* AsyncImageLoader.swift */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		77C9D62A2C1048A200F5CB81 = {
@@ -516,7 +526,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77BBA2FE2C282C2E00B57901 /* ContactsScreenView.swift in Sources */,
 				77050C752C284ED300FAA9A2 /* CustomWidghetContactsUIView.swift in Sources */,
 				77BBA2ED2C2823BD00B57901 /* ContactsWidget.swift in Sources */,
 				77BBA2FD2C28268B00B57901 /* ContactsWidgetUIView.swift in Sources */,
@@ -546,6 +555,7 @@
 				777C51532C5BC870005666F8 /* Dynamic.swift in Sources */,
 				77C7073E2C1A3B50000E4C56 /* ContactsData.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
+				77C9395F2C5D2E7600507398 /* AsyncImageLoader.swift in Sources */,
 				778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */,
 				7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */,
 				777C51422C57AD65005666F8 /* ListView.swift in Sources */,
