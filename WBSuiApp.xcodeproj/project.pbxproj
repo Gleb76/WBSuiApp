@@ -116,6 +116,7 @@
 		77BBA2F02C2823BF00B57901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77BBA2FA2C28253B00B57901 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		77BBA2FC2C28268B00B57901 /* ContactsWidgetUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsWidgetUIView.swift; sourceTree = "<group>"; };
+		77C576342C5F791000DBFC5E /* Modern Concurrency.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Modern Concurrency.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		77C7072F2C1A36B0000E4C56 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		77C707312C1A36BE000E4C56 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		77C707352C1A3854000E4C56 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
@@ -286,6 +287,14 @@
 			path = ContactsWidget;
 			sourceTree = "<group>";
 		};
+		77C576332C5F78E800DBFC5E /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				77C576342C5F791000DBFC5E /* Modern Concurrency.playground */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		77C707332C1A36C3000E4C56 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +364,7 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				77C576332C5F78E800DBFC5E /* Concurrency */,
 				777C51402C57AD53005666F8 /* ToDoList */,
 				779944972C5123A800567A63 /* UISystem */,
 				777B33DA2C50EA54005E52D9 /* HashTable */,
