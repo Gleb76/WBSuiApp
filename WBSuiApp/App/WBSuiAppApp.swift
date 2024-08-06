@@ -15,7 +15,8 @@ struct WBSuiAppApp: App {
 //            TelephoneView()
 //            InterpolationUIView()
 //            AuthorizationView()
-            ContactsView(contacts: contacts)
+//            ContactsView(contacts: contacts)
+            AnimeListView()
 
         }
     }

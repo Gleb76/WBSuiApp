@@ -1,0 +1,470 @@
+openapi: 3.0.3
+info:
+  title: Anime API
+  description: api.anilibria.tv
+  version: 1.0.0
+servers:
+  - url: https://api.anilibria.tv/v3/
+tags:
+  - name: title
+    description: Info about title
+paths:
+  /title:
+    get:
+      tags:
+        - title
+      summary: title List
+      operationId: titleGet
+      parameters:
+        - name: name
+          in: query
+          description: Filter by the given name
+          required: false
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Filter by the given status
+          required: false
+          schema:
+            type: string
+        - name: type
+          in: query
+          description: Filter by the given type
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TitleList'
+        'default':
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+components:
+  schemas:
+    TitleList:
+      type: object
+      required:
+        - info
+        - results
+      properties:
+        info:
+          type: object
+          required:
+            - count
+            - pages
+            - next
+            - prev
+          properties:
+            count:
+              type: number
+            pages:
+              type: number
+            next:
+              type: string
+              nullable: true
+            prev:
+              type: string
+              nullable: true
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/title'
+    title:
+      type: object
+      required:
+        - id
+        - code
+        - names
+        - franchises
+        - announce
+        - status
+        - posters
+        - updated
+        - last_change
+        - type
+        - genres
+        - team
+        - season
+        - description
+        - in_favorites
+        - blocked
+        - player
+        - torrents
+      properties:
+        id:
+          type: number
+        code:
+          type: string
+        names:
+          type: object
+          required:
+            - ru
+            - en
+            - alternative
+          properties:
+            ru:
+              type: string
+            en:
+              type: string
+            alternative:
+              type: string
+              nullable: true
+        franchises:
+          type: array
+          items:
+            type: object
+            properties:
+              franchise:
+                type: object
+                required:
+                  - id
+                  - name
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+              releases:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: number
+                    code:
+                      type: string
+                    ordinal:
+                      type: number
+                    names:
+                      type: object
+                      required:
+                        - ru
+                        - en
+                        - alternative
+                      properties:
+                        ru:
+                          type: string
+                        en:
+                          type: string
+                        alternative:
+                          type: string
+                          nullable: true
+        announce:
+          type: string
+        status:
+          type: object
+          required:
+            - string
+            - code
+          properties:
+            string:
+              type: string
+            code:
+              type: number
+        posters:
+          type: object
+          required:
+            - small
+            - medium
+            - original
+          properties:
+            small:
+              type: object
+              required:
+                - url
+              properties:
+                url:
+                  type: string
+                raw_base64_file:
+                  type: string
+                  nullable: true
+            medium:
+              type: object
+              required:
+                - url
+              properties:
+                url:
+                  type: string
+                raw_base64_file:
+                  type: string
+                  nullable: true
+            original:
+              type: object
+              required:
+                - url
+              properties:
+                url:
+                  type: string
+                raw_base64_file:
+                  type: string
+                  nullable: true
+        updated:
+          type: number
+          nullable: true
+        last_change:
+          type: number
+          nullable: true
+        type:
+          type: object
+          required:
+            - full_string
+            - code
+            - string
+            - episodes
+            - length
+          properties:
+            full_string:
+              type: string
+            code:
+              type: number
+            string:
+              type: string
+            episodes:
+              type: number
+              nullable: true
+            length:
+              type: number
+        genres:
+          type: array
+          items:
+            type: string
+        team:
+          type: object
+          required:
+            - voice
+            - translator
+            - editing
+            - decor
+            - timing
+          properties:
+            voice:
+              type: array
+              items:
+                type: string
+            translator:
+              type: array
+              items:
+                type: string
+            editing:
+              type: array
+              items:
+                type: string
+            decor:
+              type: array
+              items:
+                type: string
+            timing:
+              type: array
+              items:
+                type: string
+        season:
+          type: object
+          required:
+            - string
+            - code
+            - year
+            - week_day
+          properties:
+            string:
+              type: string
+            code:
+              type: number
+            year:
+              type: number
+            week_day:
+              type: number
+        description:
+          type: string
+        in_favorites:
+          type: number
+        blocked:
+          type: object
+          required:
+            - blocked
+            - bakanim
+          properties:
+            blocked:
+              type: boolean
+            bakanim:
+              type: boolean
+        player:
+          type: object
+          required:
+            - alternative_player
+            - host
+            - episodes
+            - list
+            - rutube
+          properties:
+            alternative_player:
+              type: string
+              nullable: true
+            host:
+              type: string
+            episodes:
+              type: object
+              required:
+                - first
+                - last
+                - string
+              properties:
+                first:
+                  type: number
+                last:
+                  type: number
+                string:
+                  type: string
+            list:
+              type: object
+              required:
+                - episode
+                - uuid
+                - created_timestamp
+                - hls
+              properties:
+                episode:
+                  type: number
+                name:
+                  type: string
+                  nullable: true
+                uuid:
+                  type: string
+                created_timestamp:
+                  type: number
+                preview:
+                  type: string
+                  nullable: true
+                skips:
+                  type: object
+                  required:
+                    - opening
+                    - ending
+                  properties:
+                    opening:
+                      type: array
+                      items:
+                        type: string
+                    ending:
+                      type: array
+                      items:
+                        type: string
+                hls:
+                  type: object
+                  required:
+                    - fhd
+                    - hd
+                    - sd
+                  properties:
+                    fhd:
+                      type: string
+                    hd:
+                      type: string
+                    sd:
+                      type: string
+            rutube:
+              type: object
+              additionalProperties: false
+        torrents:
+          type: object
+          required:
+            - episodes
+            - list
+          properties:
+            episodes:
+              type: object
+              required:
+                - first
+                - last
+                - string
+              properties:
+                first:
+                  type: number
+                last:
+                  type: number
+                string:
+                  type: string
+            list:
+              type: array
+              items:
+                type: object
+                properties:
+                  torrent_id:
+                    type: number
+                  episodes:
+                    type: object
+                    required:
+                      - first
+                      - last
+                      - string
+                    properties:
+                      first:
+                        type: number
+                      last:
+                        type: number
+                      string:
+                        type: string
+                  quality:
+                    type: object
+                    required:
+                      - string
+                      - type
+                      - resolution
+                      - encoder
+                    properties:
+                      string:
+                        type: string
+                      type:
+                        type: string
+                      resolution:
+                        type: string
+                      encoder:
+                        type: string
+                  leechers:
+                    type: number
+                  seeders:
+                    type: number
+                  downloads:
+                    type: number
+                  total_size:
+                    type: number
+                  size_string:
+                    type: string
+                  url:
+                    type: string
+                  magnet:
+                    type: string
+                  uploaded_timestamp:
+                    type: number
+                  hash:
+                    type: string
+    ErrorModel:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        message:
+          type: string
+        code:
+          type: integer
+          minimum: 100
+          maximum: 600
+        x-swift-hashable:
+          type: boolean
+    Source:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+      x-swift-hashable:
+        type: boolean

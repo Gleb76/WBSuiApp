@@ -13,6 +13,9 @@
 		772EAFD82C514ABA00095B1C /* UISystem in Frameworks */ = {isa = PBXBuildFile; productRef = 772EAFD72C514ABA00095B1C /* UISystem */; };
 		77324E892C11CCFC00452467 /* TelephoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77324E882C11CCFC00452467 /* TelephoneView.swift */; };
 		775059A32C4ECB850078424D /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775059A22C4ECB850078424D /* AuthorizationViewModel.swift */; };
+		77547E622C62B4AF007AA243 /* AnimeAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 77547E612C62B4AF007AA243 /* AnimeAPI */; };
+		77547E652C62B634007AA243 /* AnimeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77547E642C62B634007AA243 /* AnimeListView.swift */; };
+		77547E672C62B7BF007AA243 /* AnimeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77547E662C62B7BF007AA243 /* AnimeListViewModel.swift */; };
 		775E5C722C39AA82004D1F8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C712C39AA82004D1F8E /* Constants.swift */; };
 		775E5C742C39AA9C004D1F8E /* DateFormatterUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */; };
 		7761143D2C3736E10026D5CA /* InterpolationUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7761143C2C3736E10026D5CA /* InterpolationUIView.swift */; };
@@ -27,6 +30,7 @@
 		777E142B2C4C214D005989CD /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E142A2C4C214D005989CD /* AuthorizationView.swift */; };
 		777E14302C4C2421005989CD /* NotificationsCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777E142F2C4C2421005989CD /* NotificationsCenter.swift */; };
 		778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F359F2C3F21A60050367D /* ScrollUIView.swift */; };
+		7795C8652C610DF80096A6FC /* anime.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 7795C8642C610DF80096A6FC /* anime.yaml */; };
 		77A928592C517B080093A4C4 /* OneTimeCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A928582C517B080093A4C4 /* OneTimeCodeTextField.swift */; };
 		77AEF7142C1C323900DE604E /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7132C1C323900DE604E /* CustomTabView.swift */; };
 		77AEF7172C1C81F900DE604E /* ContactsViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */; };
@@ -84,6 +88,9 @@
 		772AAE792C24597100B9943D /* ContactsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreenView.swift; sourceTree = "<group>"; };
 		77324E882C11CCFC00452467 /* TelephoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelephoneView.swift; sourceTree = "<group>"; };
 		775059A22C4ECB850078424D /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		77547E602C62B49A007AA243 /* AnimeAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = AnimeAPI; path = Modules/AnimeAPI; sourceTree = "<group>"; };
+		77547E642C62B634007AA243 /* AnimeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListView.swift; sourceTree = "<group>"; };
+		77547E662C62B7BF007AA243 /* AnimeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeListViewModel.swift; sourceTree = "<group>"; };
 		775E5C712C39AA82004D1F8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		775E5C732C39AA9C004D1F8E /* DateFormatterUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterUtils.swift; sourceTree = "<group>"; };
 		7761143C2C3736E10026D5CA /* InterpolationUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpolationUIView.swift; sourceTree = "<group>"; };
@@ -103,7 +110,9 @@
 		777E142F2C4C2421005989CD /* NotificationsCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCenter.swift; sourceTree = "<group>"; };
 		778F359F2C3F21A60050367D /* ScrollUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollUIView.swift; sourceTree = "<group>"; };
 		77905B8E2C32B6F600865D16 /* Factory.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Factory.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		779944972C5123A800567A63 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = text; name = UISystem; path = Modules/UISystem; sourceTree = SOURCE_ROOT; };
+		7795C8642C610DF80096A6FC /* anime.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = anime.yaml; sourceTree = SOURCE_ROOT; };
+		779944972C5123A800567A63 /* UISystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISystem; path = WBSuiApp/UISystem; sourceTree = SOURCE_ROOT; };
+		779E5BB92C610AE1000D28E7 /* generateAnimeapi.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generateAnimeapi.sh; sourceTree = "<group>"; };
 		77A928582C517B080093A4C4 /* OneTimeCodeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeCodeTextField.swift; sourceTree = "<group>"; };
 		77AEF7132C1C323900DE604E /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		77AEF7162C1C81F900DE604E /* ContactsViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewDetail.swift; sourceTree = "<group>"; };
@@ -146,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77547E622C62B4AF007AA243 /* AnimeAPI in Frameworks */,
 				772EAFD82C514ABA00095B1C /* UISystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +169,22 @@
 				77C9D6382C1048A200F5CB81 /* OnboardingView.swift */,
 			);
 			path = OnBoardingScreen;
+			sourceTree = "<group>";
+		};
+		775039B52C60DE6400B5FCDF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		77547E632C62B61A007AA243 /* AnimeNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				77547E642C62B634007AA243 /* AnimeListView.swift */,
+				77547E662C62B7BF007AA243 /* AnimeListViewModel.swift */,
+			);
+			path = AnimeNetworking;
 			sourceTree = "<group>";
 		};
 		7761143B2C3736BB0026D5CA /* Interpolation */ = {
@@ -345,6 +371,9 @@
 		77C9D62A2C1048A200F5CB81 = {
 			isa = PBXGroup;
 			children = (
+				77547E602C62B49A007AA243 /* AnimeAPI */,
+				779E5BB92C610AE1000D28E7 /* generateAnimeapi.sh */,
+				7795C8642C610DF80096A6FC /* anime.yaml */,
 				77C9D6352C1048A200F5CB81 /* WBSuiApp */,
 				77BBA2E92C2823BD00B57901 /* ContactsWidget */,
 				77BBA2E42C2823BD00B57901 /* Frameworks */,
@@ -364,9 +393,11 @@
 		77C9D6352C1048A200F5CB81 /* WBSuiApp */ = {
 			isa = PBXGroup;
 			children = (
+				77547E632C62B61A007AA243 /* AnimeNetworking */,
+				779944972C5123A800567A63 /* UISystem */,
+				775039B52C60DE6400B5FCDF /* Modules */,
 				77C576332C5F78E800DBFC5E /* Concurrency */,
 				777C51402C57AD53005666F8 /* ToDoList */,
-				779944972C5123A800567A63 /* UISystem */,
 				777B33DA2C50EA54005E52D9 /* HashTable */,
 				77C9D6452C1048BF00F5CB81 /* Resources */,
 				778F359E2C3F21920050367D /* ScrollView */,
@@ -464,6 +495,7 @@
 			name = WBSuiApp;
 			packageProductDependencies = (
 				772EAFD72C514ABA00095B1C /* UISystem */,
+				77547E612C62B4AF007AA243 /* AnimeAPI */,
 			);
 			productName = WBSuiApp;
 			productReference = 77C9D6332C1048A200F5CB81 /* WBSuiApp.app */;
@@ -525,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77C9D63E2C1048A300F5CB81 /* Preview Assets.xcassets in Resources */,
+				7795C8652C610DF80096A6FC /* anime.yaml in Resources */,
 				77C9D63B2C1048A300F5CB81 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,8 +596,10 @@
 				77324E892C11CCFC00452467 /* TelephoneView.swift in Sources */,
 				77C9D6392C1048A200F5CB81 /* OnboardingView.swift in Sources */,
 				777C51532C5BC870005666F8 /* Dynamic.swift in Sources */,
+				77547E672C62B7BF007AA243 /* AnimeListViewModel.swift in Sources */,
 				77C7073E2C1A3B50000E4C56 /* ContactsData.swift in Sources */,
 				77C9D6372C1048A200F5CB81 /* WBSuiAppApp.swift in Sources */,
+				77547E652C62B634007AA243 /* AnimeListView.swift in Sources */,
 				77C9395F2C5D2E7600507398 /* AsyncImageLoader.swift in Sources */,
 				778F35A02C3F21A60050367D /* ScrollUIView.swift in Sources */,
 				7761143F2C3737060026D5CA /* StringInterpolation.swift in Sources */,
@@ -864,6 +899,10 @@
 		772EAFD72C514ABA00095B1C /* UISystem */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UISystem;
+		};
+		77547E612C62B4AF007AA243 /* AnimeAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AnimeAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
